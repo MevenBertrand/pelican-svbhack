@@ -21,6 +21,7 @@
         <span class="conference">
                 {% if article.accepted %} {{article.place}} {{article.date | strftime('%Y')}} {% endif %}
                 {% if article.submitted %} {{article.place}} {{article.date | strftime('%Y')}} {% trans %}(Submitted){% endtrans %} {% endif %}
+                {% if article.toappear %} {{article.place}} {{article.date | strftime('%Y')}} {% trans %}(To appear){% endtrans %} {% endif %}
         </abbr>
 
 {% else %}

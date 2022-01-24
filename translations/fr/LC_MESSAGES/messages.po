@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-16 17:48+0200\n"
+"POT-Creation-Date: 2022-01-24 17:07+0100\n"
 "PO-Revision-Date: 2020-08-18 15:09+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -22,11 +22,15 @@ msgstr ""
 msgid "(Submitted)"
 msgstr "(Soumis)"
 
-#: templates/article_infos.html:38
+#: templates/article_infos.html:24
+msgid "(To appear)"
+msgstr "(À paraître)"
+
+#: templates/article_infos.html:39
 msgid "with"
 msgstr "avec"
 
-#: templates/article_infos.html:48
+#: templates/article_infos.html:49
 msgid "With"
 msgstr "Avec"
 
@@ -35,6 +39,7 @@ msgid "Video"
 msgstr "Vidéo"
 
 #: templates/base.html:101
+#, python-format
 msgid ""
 "Under <a "
 "href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en\">Creative"
