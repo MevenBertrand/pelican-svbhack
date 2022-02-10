@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-01-24 17:07+0100\n"
+"POT-Creation-Date: 2022-02-10 12:40+0100\n"
 "PO-Revision-Date: 2020-08-18 15:09+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -37,6 +37,10 @@ msgstr "Avec"
 #: templates/article_links.html:21
 msgid "Video"
 msgstr "Vidéo"
+
+#: templates/article_links.html:33
+msgid "Abstract"
+msgstr "Résumé"
 
 #: templates/base.html:101
 #, python-format
