@@ -1,5 +1,5 @@
 <div class ="article-links">
-  {% if article.doi %}
+{% if article.doi %}
   <a href="http://doi.org/{{article.doi}}">DOI</a>
 {% endif %}
 {% if article.pdf_ex %}
@@ -12,13 +12,13 @@
   <a href="{{article.slides_ex}}">Slides</a>
 {% endif %}
 {% if article.slides_loc %}
-<a href="{{SITE_URL}}/documents/{{article.slides_loc}}">Slides</a>
+  <a href="{{SITE_URL}}/documents/{{article.slides_loc}}">Slides</a>
 {% endif %}
 {% if article.hal %}
   <a href="{{article.hal}}">Hal</a>
 {% endif %}
 {% if article.video %}
-  <a href="{{article.video}}">{% trans %}Video{% endtrans %} </a>
+  <a href="{{article.video}}">{% trans %}Video{% endtrans %}</a>
 {% endif %}
 {% if article.arxiv %}
   <a href="{{article.arxiv}}">arXiv</a>
