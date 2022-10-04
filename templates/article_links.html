@@ -1,6 +1,6 @@
 <div class ="article-links">
 {% if article.doi %}
-  <a href="http://doi.org/{{article.doi}}">DOI</a>
+  <a href="http://doi.org/{{article.doi}}">Doi</a>
 {% endif %}
 {% if article.pdf_ex %}
   <a href="{{article.pdf_ex}}">Pdf</a>
@@ -21,7 +21,7 @@
   <a href="{{article.video}}">{% trans %}Video{% endtrans %}</a>
 {% endif %}
 {% if article.arxiv %}
-  <a href="{{article.arxiv}}">arXiv</a>
+  <a href="{{article.arxiv}}">ArXiv</a>
 {% endif %}
 {% if article.page %}
   <a href="{{article.page}}">Page</a>

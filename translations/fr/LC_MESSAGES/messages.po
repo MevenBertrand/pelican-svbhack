@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-02-10 12:40+0100\n"
+"POT-Creation-Date: 2022-10-04 15:46+0200\n"
 "PO-Revision-Date: 2020-08-18 15:09+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -18,19 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: templates/article_infos.html:23
+#: templates/article_infos.html:17
 msgid "(Submitted)"
 msgstr "(Soumis)"
 
-#: templates/article_infos.html:24
+#: templates/article_infos.html:18
 msgid "(To appear)"
 msgstr "(À paraître)"
 
-#: templates/article_infos.html:39
+#: templates/article_infos.html:29
 msgid "with"
 msgstr "avec"
 
-#: templates/article_infos.html:49
+#: templates/article_infos.html:43
 msgid "With"
 msgstr "Avec"
 
@@ -62,6 +62,6 @@ msgstr ""
 "\">pelican-svbhack</a> par Giulio Fidente. "
 
 #: templates/page.html:13
-msgid "Updated on:"
-msgstr "Mis à jour :"
+msgid "Last update:"
+msgstr "Dernière mise à jour :"
 
