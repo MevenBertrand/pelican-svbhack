@@ -24,13 +24,14 @@
     {% else %}
             {{ article.locale_date }}
     {% endif %}
-    <br>
-    {% if article.place %}
+{% if article.place %}
+  <br>
     {{ article.place}}{% if article.with %}, {% trans %}with{% endtrans %}{% endif %}
     {% endif %}
 {% endif %}
 
 {% if article.place and article.with %}
+  <br>
     {% for author in article.authors %}
       <a class="url fn" href="{{ author | lookup_author_webpage }}">
         {% if author == article.presenter %}<span class="presenter">{% endif %}
