@@ -31,7 +31,6 @@
 {% endif %}
 
 {% if article.place and article.with %}
-  <br>
     {% for author in article.authors %}
       <a class="url fn" href="{{ author | lookup_author_webpage }}">
         {% if author == article.presenter %}<span class="presenter">{% endif %}
