@@ -13,8 +13,8 @@
 
 <!-- Date -->
 {% if article.publication %}
-    {% if article.accepted %} {{article.place}} {{article.date | strftime('%Y')}} {% endif %}
-    {% if article.submitted %} {{article.place}} {{article.date | strftime('%Y')}} {% trans %}(Submitted){% endtrans %} {% endif %}
+    {% if article.accepted %} {{article.place}} {{article.date | strftime('%Y')}} {% if article.distinguished %} {% trans %}(Distinguished paper){% endtrans %} {% endif %} {% endif %}
+    {% if article.submitted %} {{article.date | strftime('%Y')}} {% trans %}(Submitted){% endtrans %} {% endif %}
     {% if article.toappear %} {{article.place}} {{article.date | strftime('%Y')}} {% trans %}(To appear){% endtrans %} {% endif %}
 {% else %}
     {% if article.start and article.end %}
