@@ -1,17 +1,7 @@
 <div class="article_meta">
 
-  <!--
-  <div class="article_meta">
-    <p>Posted on: {{ article.locale_date }}</p>
-  </div>
-  {% if article.readtime %}
-  <div class="article_readtime">
-    <p>Estimated read time: {{article.readtime.minutes}} minutes</p>
-  </div>
-  {% endif %}
-  -->
-
 <!-- Date -->
+<p>
 {% if article.publication %}
     {% if article.accepted %} {{article.place}}, {{article.date | strftime('%Y')}} {% if article.distinguished %} {% trans %}(Distinguished paper){% endtrans %} {% endif %} {% endif %}
     {% if article.submitted %} {{article.date | strftime('%Y')}} {% trans %}(Submitted){% endtrans %} {% endif %}
