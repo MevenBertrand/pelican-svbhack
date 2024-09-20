@@ -11,16 +11,20 @@
             {{ article.start | strftime('%B %Y')}} – {{ article.end | strftime('%B %Y') }}
     {% elif article.ongoing %}
             {{ article.locale_date}} – …
+    {% elif article.nodate %}
     {% else %}
             {{ article.locale_date }}
     {% endif %}
-{% if article.place %}
-  <br>
+</p>
+  {% if article.place %}
+  <p>
     {{ article.place}}{% if article.with %}, {% trans %}with{% endtrans %}{% endif %}
-    {% endif %}
+  </p>
+  {% endif %}
 {% endif %}
 
 {% if article.place and article.with %}
+    <p>
     {% for author in article.authors %}
       <a class="url fn" href="{{ author | lookup_author_webpage }}">
         {% if author == article.presenter %}<span class="presenter">{% endif %}
@@ -28,20 +32,23 @@
         {% if not loop.last %},{% endif %}
         {% if author == article.presenter %}</span>{% endif %}
     {% endfor %}
+    </p>
 {% elif article.with %}
-    <br>
+    <p>
     {% trans %}With{% endtrans %}
     {% for author in article.authors %}
         <a class="url fn" href="{{ author | lookup_author_webpage }}">{{ author }}</a>{% if not loop.last %},{% endif %}
     {% endfor %}
+    </p>
 {% elif article.authors %}
-  <br>
+  <p>
   {% for author in article.authors %}
     <a class="url fn" href="{{ author | lookup_author_webpage }}">
       {% if author == article.presenter %}<span class="presenter">{% endif %}
       {{ author }}</a>{% if not loop.last %},{% endif %}
       {% if author == article.presenter %}</span>{% endif %}
   {% endfor %}
+  </p>
 {% endif %}
 
 </div><!-- /.post-info -->

@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fontawesome-free-6.6.0-web/css/fontawesome.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fontawesome-free-6.6.0-web/css/brands.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fontawesome-free-6.6.0-web/css/solid.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,8 +75,18 @@
           {% endif %}
         </li>
         {% endfor %}
+        <!-- {% for name, link in ACADEMIA %}
+        <li>
+          <a class="sc-{{ name }}"
+            href="{{ link }}"
+            target="_blank">
+            <i class="ai ai-{{ name }}"></i>
+          </a>
+        </li>
+        {% endfor %} -->
       </ul>
       {% endif %}
+
 
       <nav><ul>
         {% for title, link in MENUITEMS %}
