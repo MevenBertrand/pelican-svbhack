@@ -32,6 +32,9 @@
 {% if article.abstract %}
   <a href="{{SITE_URL}}/documents/{{article.abstract}}">{% trans %}Abstract{% endtrans %}</a>
 {% endif %}
+{% if article.abstract_ext %}
+  <a href="{{article.abstract_ext}}">{% trans %}Abstract{% endtrans %}</a>
+{% endif %}
 {% if article.github %}
   <a href="{{article.github}}">GitHub</a>
 {% endif %}
