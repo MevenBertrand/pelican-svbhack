@@ -12,9 +12,9 @@
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
   {% endif %}
 
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fontawesome-free-6.6.0-web/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fontawesome-free-6.6.0-web/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fontawesome-free-6.6.0-web/css/solid.css">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fontawesome-free-7.2.0-web/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fontawesome-free-7.2.0-web/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/fontawesome-free-7.2.0-web/css/solid.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
   <meta charset="utf-8" />
@@ -61,18 +61,11 @@
       <ul class="social">
         {% for name, link in SOCIAL %}
         <li>
-          {% if name == "stack-exchange" %}
-          <a href ="{{ link }}" 
-            target="_blank">
-            <img src="https://stackoverflow.design/assets/img/logos/se/se-icon.svg" alt="Proof Assistants Stack Exchange">
-          </a>
-          {% else %}
           <a class="sc-{{ name }}"
              href="{{ link }}"
              target="_blank">
             <i class="fa-brands fa-{{ name }}"></i>
           </a>
-          {% endif %}
         </li>
         {% endfor %}
         <!-- {% for name, link in ACADEMIA %}
