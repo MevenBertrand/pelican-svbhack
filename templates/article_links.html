@@ -1,44 +1,44 @@
 <div class ="article-links">
 {% if article.doi %}
-  <a href="http://doi.org/{{article.doi}}">Doi</a>
+  <a href="http://doi.org/{{article.doi}}">doi</a>
 {% endif %}
 {% if article.pdf_ex %}
-  <a href="{{article.pdf_ex}}">Pdf</a>
+  <a href="{{article.pdf_ex}}">pdf</a>
 {% endif %}
 {% if article.pdf_loc %}
-  <a href="{{SITE_URL}}/documents/{{article.pdf_loc}}">Pdf</a>
+  <a href="{{SITE_URL}}/documents/{{article.pdf_loc}}">pdf</a>
 {% endif %}
 {% if article.slides_ex %}
-  <a href="{{article.slides_ex}}">Slides</a>
+  <a href="{{article.slides_ex}}">slides</a>
 {% endif %}
 {% if article.slides_loc %}
-  <a href="{{SITE_URL}}/documents/{{article.slides_loc}}">Slides</a>
+  <a href="{{SITE_URL}}/documents/{{article.slides_loc}}">slides</a>
 {% endif %}
 {% if article.hal %}
-  <a href="{{article.hal}}">Hal</a>
+  <a href="{{article.hal}}">hal</a>
 {% endif %}
 {% if article.video %}
-  <a href="{{article.video}}">{% trans %}Video{% endtrans %}</a>
+  <a href="{{article.video}}">{% trans %}video{% endtrans %}</a>
 {% endif %}
 {% if article.arxiv %}
-  <a href="{{article.arxiv}}">ArXiv</a>
+  <a href="{{article.arxiv}}">arxiv</a>
 {% endif %}
 {% if article.page %}
-  <a href="{{article.page}}">Web Page</a>
+  <a href="{{article.page}}">web page</a>
 {% endif %}
 {% if article.bib %}
-  <a href="{{SITE_URL}}/documents/{{article.bib}}">BibTeX</a>
+  <a href="{{SITE_URL}}/documents/{{article.bib}}">bibtex</a>
 {% endif %}
 {% if article.abstract %}
-  <a href="{{SITE_URL}}/documents/{{article.abstract}}">{% trans %}Abstract{% endtrans %}</a>
+  <a href="{{SITE_URL}}/documents/{{article.abstract}}">{% trans %}abstract{% endtrans %}</a>
 {% endif %}
 {% if article.abstract_ext %}
-  <a href="{{article.abstract_ext}}">{% trans %}Abstract{% endtrans %}</a>
+  <a href="{{article.abstract_ext}}">{% trans %}abstract{% endtrans %}</a>
 {% endif %}
 {% if article.github %}
-  <a href="{{article.github}}">GitHub</a>
+  <a href="{{article.github}}">github</a>
 {% endif %}
 {% if article.demo %}
-  <a href="{{article.demo}}">Demo</a>
+  <a href="{{article.demo}}">demo</a>
 {% endif %}
 </div>
