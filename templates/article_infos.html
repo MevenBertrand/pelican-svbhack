@@ -27,8 +27,7 @@
     <p>
     {% for author in article.authors %}
       <a class="url fn" href="{{ author | lookup_author_webpage }}">
-        {% if author == article.presenter %}<span class="presenter">{% endif %}
-        {{ author }}</a>
+        {{ author }}{% if author == article.presenter %}°{% endif %}</a>
         {% if not loop.last %},{% endif %}
         {% if author == article.presenter %}</span>{% endif %}
     {% endfor %}
@@ -44,9 +43,7 @@
   <p>
   {% for author in article.authors %}
     <a class="url fn" href="{{ author | lookup_author_webpage }}">
-      {% if author == article.presenter %}<span class="presenter">{% endif %}
-      {{ author }}</a>{% if not loop.last %},{% endif %}
-      {% if author == article.presenter %}</span>{% endif %}
+      {{ author }}{% if author == article.presenter %}°{% endif %}</a>{% if not loop.last %},{% endif %}
   {% endfor %}
   </p>
 {% endif %}
