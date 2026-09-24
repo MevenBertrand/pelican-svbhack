@@ -18,34 +18,17 @@
 </p>
   {% if article.place %}
   <p>
-    {{ article.place}}{% if article.with %}, {% trans %}with{% endtrans %}{% endif %}
+    {{ article.place}}
   </p>
   {% endif %}
 {% endif %}
 
-{% if article.place and article.with %}
-    <p>
-    {% for author in article.authors %}
-      <a class="url fn" href="{{ author | lookup_author_webpage }}">
-        {{ author }}{% if author == article.presenter %}°{% endif %}</a>
-        {% if not loop.last %},{% endif %}
-        {% if author == article.presenter %}</span>{% endif %}
-    {% endfor %}
-    </p>
-{% elif article.with %}
-    <p>
-    {% trans %}With{% endtrans %}
-    {% for author in article.authors %}
-        <a class="url fn" href="{{ author | lookup_author_webpage }}">{{ author }}</a>{% if not loop.last %},{% endif %}
-    {% endfor %}
-    </p>
-{% elif article.authors %}
   <p>
+  {% if article.with %} {% trans %}With{% endtrans %} {% endif %}
   {% for author in article.authors %}
     <a class="url fn" href="{{ author | lookup_author_webpage }}">
       {{ author }}{% if author == article.presenter %}°{% endif %}</a>{% if not loop.last %},{% endif %}
   {% endfor %}
   </p>
-{% endif %}
 
 </div><!-- /.post-info -->
